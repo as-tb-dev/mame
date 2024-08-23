@@ -387,10 +387,6 @@ unsigned a2_video_device::get_text_character(uint32_t code, int row)
 				}
 			}
 		}
-		else if (Model == model::IIGS)
-		{
-			code |= 0x100;
-		}
 		else
 		{
 			if ((code >= 0x60) && (code <= 0x7f))
@@ -398,6 +394,10 @@ unsigned a2_video_device::get_text_character(uint32_t code, int row)
 				code |= 0x80;    // map to lowercase normal
 				invert_mask ^= 0x7f;  // and flip the color
 			}
+		}
+		if (Model == model::IIGS)
+		{
+			code |= get_language() * 0x100;
 		}
 	}
 	else    // original II and II Plus
