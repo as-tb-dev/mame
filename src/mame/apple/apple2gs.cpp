@@ -440,7 +440,7 @@ private:
 	bool m_ioudis = false;
 	bool m_rombank = false;
 
-	u8 m_shadow = 0, m_speed = 0, m_textcol = 0, m_langsel = 0;
+	u8 m_shadow = 0, m_speed = 0, m_textcol = 0;
 	u8 m_motors_active = 0, m_slotromsel = 0, m_intflag = 0, m_vgcint = 0, m_inten = 0;
 
 	bool m_last_speed = false;

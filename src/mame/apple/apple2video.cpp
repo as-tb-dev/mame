@@ -76,6 +76,7 @@ void a2_video_device::device_start()
 	save_item(NAME(m_GSbg));
 	save_item(NAME(m_GSborder));
 	save_item(NAME(m_newvideo));
+	save_item(NAME(m_langsel));
 	save_item(NAME(m_monochrome));
 	save_item(NAME(m_rgbmode));
 	save_item(NAME(m_shr_palette));
